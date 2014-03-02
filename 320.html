@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Логическая схема лифта 320кг</title>
+  <style type="text/css">
+    #schema{ position:relative; width:1000px; height:800px; margin: auto; background:#FFF url('3206.jpg'); overflow:hidden; }
+    .footer{ position:absolute; top:700px; height:100px; width:1000px; background:#FFF; }
+    .state{ position:absolute; width:10px; height:14px; overflow:hidden; }
+    .state span{ position:absolute; left:10px; }
+    #rv5{ top:101px; left:410px; }
+    #rtoz1{ top:85px; left:110px; }
+    #rdz1{ top:95px; left:110px; }
+    #rodz1{ top:101px; left:120px; }
+    #rzdz1{ top:108px; left:100px; }
+    #vr2-4z{ top:114px; left:110px; }
+    #rv2z1{ top:135px; left:242px; }
+    #dkz{ top:143px; left:230px; }
+    #l1{ top:135px; left:352px; }
+    #rv5z1{ top:155px; left:240px; }
+    #rv2{ top:153px; left:408px; }
+    #rdr1{ top:178px; left:190px; }
+    #rv5z2{ top:178px; left:265px; }
+    #rpz1{ top:178px; left:300px; }
+    #rp{ top:178px; left:408px; }
+    #rzdz2{ top:188px; left:285px; }
+    #rdz2{ top:201px; left:190px; }
+    #f12rez1{ top:195px; left:100px; }
+    #f6rez1{ top:201px; left:110px; }
+    #f1rez1{ top:206px; left:120px; }
+    #rv2r1{ top:211px; left:100px; }
+    #rzdz3{ top:216px; left:110px; }
+    #rodr1{ top:206px; left:200px; }
+    #r7{ top:207px; left:232px; }
+    #vkzz{ top:207px; left:270px; }
+    #vbrr{ top:207px; left:310px; }
+    #rzd{ top:207px; left:408px; }
+    #mknstopr{ top:220px; left:75px;}
+    #vkr{ top:233px; left:75px; }
+    #vnur{ top:244px; left:75px; }
+    #v2r{ top:253px; left:75px; }
+    #dchtor{ top:260px; left:180px; }
+    #rto{ top:259px; left:409px; }
+    #knstopr{ top:267px; left:75px; }
+    #vlr{ top:278px; left:75px; }
+    #spkr{ top:288px; left:75px; }
+    #dkr{ top:303px; left:75px; }
+    #f1dshr{ top:318px; left:75px; }
+    #f12dshr{ top:329px; left:75px; }
+    #rdr2{ top:294px; left:95px; }
+    #rtor1{ top:294px; left:129px; }
+    #vr2-3r{ top:295px; left:183px; }
+    #rv5z3{ top:294px; left:250px; }
+    #rpr1{ top:294px; left:285px; }
+    #vkor{ top:294px; left:325px; }
+    #rzdr1{ top:294px; left:360px; }
+    #rod{ top:294px; left:409px; }
+    #vbrz{ top:302px; left:260px; }
+    #rodz2{ top:309px; left:272px; }
+    #rtor2{ top:307px; left:325px; }
+    #rpr2{ top:316px; left:353px; }
+    #rv5r1{ top:321px; left:380px; }
+    #rpz2{ top:310px; left:210px; }
+    #rkdr1{ top:315px; left:233px; }
+    #rodr2{ top:335px; left:198px; }
+    #rkdz1{ top:470px; left:200px; }
+    #rodr3{ top:470px; left:320px; }
+    #kb{ top:470px; left:412px; }
+    #vr2-2z{ top:347px; left:92px; }
+    #kmr1{ top:347px; left:130px; }
+    #rdr3{ top:347px; left:160px; }
+    #mknvverhz{ top:352px; left:300px; }
+    #mknvnizz{ top:424px; left:300px; }
+    #f12knpz{ top:363px; left:275px; }
+    #f12knz{ top:372px; left:262px; }
+    #f12rez2{ top:380px; left:250px; }
+    #f12re{ top:363px; left:428px; }
+    #f12ep-4z{ top:375px; left:368px; }
+    #f6knpz{ top:400px; left:275px; }
+    #f6knz{ top:407px; left:262px; }
+    #f6rez2{ top:415px; left:250px; }
+    #f6re{ top:400px; left:428px; }
+    #f6ep-3r6ep-4z{ top:410px; left:368px; }
+    #f1knpz{ top:435px; left:275px; }
+    #f1knz{ top:442px; left:262px; }
+    #f1rez2{ top:450px; left:250px; }
+    #f1re{ top:435px; left:428px; }
+    #f1ep-3r{ top:448px; left:368px; }
+    #kbrr{ top:435px; left:93px; }
+    #rdr4{ top:435px; left:142px; }
+    #vr2-1r{ top:435px; left:167px; }
+    #rkdz2{ top:435px; left:225px; }
+    #rv2r2{ top:442px; left:207px; }
+    #kbz1{ top:477px; left:235px; }
+    #kmz1{ top:505px; left:130px; }
+    #kknvverhz{ top:482px; left:260px; }
+    #kknvnizz{ top:525px; left:260px; }
+    #f1rez3{ top:515px; left:260px; }
+    #f12rez3{ top:493px; left:260px; }
+    #f6rez3{ top:505px; left:250px; }
+    #f6ep-2r{ top:496px; left:282px; }
+    #f6ep-1z{ top:511px; left:282px; }
+    #f12ep-2r{ top:487px; left:307px; }
+    #f1ep-1z{ top:522px; left:307px; }
+    #knr1{ top:487px; left:365px; }
+    #kvr1{ top:522px; left:365px; }
+    #kv{ top:487px; left:412px; }
+    #kn{ top:522px; left:412px; }
+    #kvz1{ top:502px; left:337px; }
+    #knz1{ top:537px; left:337px; }
+    #rkdz3{ top:557px; left:215px; }
+    #kbz2{ top:557px; left:265px; }
+    #kmz2{ top:573px; left:250px; }
+    #rpz3{ top:583px; left:258px; }
+    #rtoz2{ top:575px; left:280px; }
+    #rtoz3{ top:568px; left:306px; }
+    #rzdr2{ top:593px; left:346px; }
+    #rkd{ top:593px; left:412px; }
+    #rkdr2{ top:626px; left:160px; }
+    #rkdz4{ top:646px; left:160px; }
+    #kvz2{ top:646px; left:95px; }
+    #knz2{ top:652px; left:106px; }
+    #kbr1{ top:646px; left:320px; }
+    #km{ top:646px; left:412px; }
+    #rd{ top:681px; left:411px; }
+
+    #rzdz4{ top:460px; left:545px;}
+    #rzdz5{ top:460px; left:562px;}
+    #rodz3{ top:460px; left:582px;}
+    #rodz4{ top:460px; left:608px;}
+    #rdz3 { top:489px; left:723px;}
+    #emt  { top:513px; left:700px;}
+    #knz3 { top:439px; left:762px;}
+    #knz4 { top:439px; left:779px;}
+    #kvz3 { top:439px; left:823px;}
+    #kvz4 { top:439px; left:841px;}
+    #kbz3 { top:489px; left:760px;}
+    #kbz4 { top:489px; left:795px;}
+    #kmz3 { top:489px; left:821px;}
+    #kmz4 { top:489px; left:855px;}
+  </style>
+</head>
+<body>
+  <div id="schema">
+    <div class="state" id="rv5">
+      <img id="rv5png" src="states/red.png"/>
+      <span><img src="tooltip/rv5.jpg"/></span>
+    </div>
+    <div class="state" id="rtoz1">
+      <img id="rtoz1png" src="states/red.png"/>
+      <span><img src="tooltip/rtoz.jpg"/></span>
+    </div>
+    <div class="state" id="rdz1">
+      <img id="rdz1png" src="states/red.png"/>
+      <span><img src="tooltip/rdz.jpg"/></span>
+    </div>
+    <div class="state" id="rodz1">
+      <img id="rodz1png" src="states/red.png"/>
+      <span><img src="tooltip/rodz.jpg"/></span>
+    </div>
+    <div class="state" id="rzdz1">
+      <img id="rzdz1png" src="states/red.png"/>
+      <span><img src="tooltip/rzdz.jpg"/></span>
+    </div>
+    <div class="state" id="vr2-4z">
+      <img id="vr2-4zpng" src="states/red.png"/>
+      <span><img src="tooltip/vr2-4z.jpg"/></span>
+    </div>
+    <div class="state" id="rv2z1">
+      <img id="rv2z1png" src="states/red.png"/>
+      <span><img src="tooltip/rv2z.jpg"/></span>
+    </div>
+    <div class="state" id="dkz">
+      <img id="dkzpng" src="states/red.png"/>
+      <span><img src="tooltip/dkz.jpg"/></span>
+    </div>
+    <div class="state" id="l1">
+      <img id="l1png" src="states/red.png"/>
+      <span><img src="tooltip/l1.jpg"/></span>
+    </div>
+    <div class="state" id="rv5z1">
+      <img id="rv5z1png" src="states/red.png"/>
+      <span><img src="tooltip/rv5z.jpg"/></span>
+    </div>
+    <div class="state" id="rv2">
+      <img id="rv2png" src="states/red.png"/>
+      <span><img src="tooltip/rv2.jpg"/></span>
+    </div>
+    <div class="state" id="rdr1">
+      <img id="rdr1png" src="states/green.png"/>
+      <span><img src="tooltip/rdr.jpg"/></span>
+    </div>
+    <div class="state" id="rv5z2">
+      <img id="rv5z2png" src="states/red.png"/>
+      <span><img src="tooltip/rv5z.jpg"/></span>
+    </div>
+    <div class="state" id="rpz1">
+      <img id="rpz1png" src="states/red.png"/>
+      <span><img src="tooltip/rpz.jpg"/></span>
+    </div>
+    <div class="state" id="rzdz2">
+      <img id="rzdz2png" src="states/red.png"/>
+      <span><img src="tooltip/rzdz.jpg"/></span>
+    </div>
+    <div class="state" id="rp">
+      <img id="rppng" src="states/red.png"/>
+      <span><img src="tooltip/rp.jpg"/></span>
+    </div>
+    <div class="state" id="rdz2">
+      <img id="rdz2png" src="states/red.png"/>
+      <span><img src="tooltip/rdz.jpg"/></span>
+    </div>
+    <div class="state" id="f12rez1">
+      <img id="f12rez1png" src="states/red.png"/>
+      <span><img src="tooltip/f12rez.jpg"/></span>
+    </div>
+    <div class="state" id="f6rez1">
+      <img id="f6rez1png" src="states/red.png"/>
+      <span><img src="tooltip/f6rez.jpg"/></span>
+    </div>
+    <div class="state" id="f1rez1">
+      <img id="f1rez1png" src="states/red.png"/>
+      <span><img src="tooltip/f1rez.jpg"/></span>
+    </div>
+    <div class="state" id="rv2r1">
+      <img id="rv2r1png" src="states/green.png"/>
+      <span><img src="tooltip/rv2r.jpg"/></span>
+    </div>
+    <div class="state" id="rzdz3">
+      <img id="rzdz3png" src="states/red.png"/>
+      <span><img src="tooltip/rzdz.jpg"/></span>
+    </div>
+    <div class="state" id="rodr1">
+      <img id="rodr1png" src="states/green.png"/>
+      <span><img src="tooltip/rodr.jpg"/></span>
+    </div>
+    <div class="state" id="r7">
+      <img id="r7png" src="states/green.png"/>
+      <span><img src="tooltip/r7.jpg"/></span>
+    </div>
+    <div class="state" id="vkzz">
+      <img id="vkzzpng" src="states/red.png"/>
+      <span><img src="tooltip/vkzz.jpg"/></span>
+    </div>
+    <div class="state" id="vbrr">
+      <img id="vbrrpng" src="states/red.png"/>
+      <span><img src="tooltip/vbrr.jpg"/></span>
+    </div>
+    <div class="state" id="rzd">
+      <img id="rzdpng" src="states/red.png"/>
+      <span><img src="tooltip/rzd.jpg"/></span>
+    </div>
+    <div class="state" id="mknstopr">
+      <img id="mknstoprpng" src="states/green.png"/>
+      <span><img src="tooltip/mknstopr.jpg"/></span>
+    </div>
+    <div class="state" id="vkr">
+      <img id="vkrpng" src="states/green.png"/>
+      <span><img src="tooltip/vkr.jpg"/></span>
+    </div>
+    <div class="state" id="vnur">
+      <img id="vnurpng" src="states/green.png"/>
+      <span><img src="tooltip/vnur.jpg"/></span>
+    </div>
+    <div class="state" id="v2r">
+      <img id="v2rpng" src="states/green.png"/>
+      <span><img src="tooltip/v2r.jpg"/></span>
+    </div>
+    <div class="state" id="knstopr">
+      <img id="knstoprpng" src="states/green.png"/>
+      <span><img src="tooltip/knstopr.jpg"/></span>
+    </div>
+    <div class="state" id="vlr">
+      <img id="vlrpng" src="states/green.png"/>
+      <span><img src="tooltip/vlr.jpg"/></span>
+    </div>
+    <div class="state" id="spkr">
+      <img id="spkrpng" src="states/green.png"/>
+      <span><img src="tooltip/spkr.jpg"/></span>
+    </div>
+    <div class="state" id="dkr">
+      <img id="dkrpng" src="states/green.png"/>
+      <span><img src="tooltip/dkr.jpg"/></span>
+    </div>
+    <div class="state" id="f1dshr">
+      <img id="f1dshrpng" src="states/green.png"/>
+      <span><img src="tooltip/f1dshr.jpg"/></span>
+    </div>
+    <div class="state" id="f12dshr">
+      <img id="f12dshrpng" src="states/green.png"/>
+      <span><img src="tooltip/f12dshr.jpg"/></span>
+    </div>
+    <div class="state" id="dchtor">
+      <img id="dchtorpng" src="states/red.png"/>
+      <span><img src="tooltip/dchtor.jpg"/></span>
+    </div>
+    <div class="state" id="rto">
+      <img id="rtopng" src="states/red.png"/>
+      <span><img src="tooltip/rto.jpg"/></span>
+    </div>
+    <div class="state" id="rdr2">
+      <img id="rdr2png" src="states/green.png"/>
+      <span><img src="tooltip/rdr.jpg"/></span>
+    </div>
+    <div class="state" id="rtor1">
+      <img id="rtor1png" src="states/green.png"/>
+      <span><img src="tooltip/rtor.jpg"/></span>
+    </div>
+    <div class="state" id="vr2-3r">
+      <img id="vr2-3rpng" src="states/green.png"/>
+      <span><img src="tooltip/vr2-3r.jpg"/></span>
+    </div>
+    <div class="state" id="rv5z3">
+      <img id="rv5z3png" src="states/red.png"/>
+      <span><img src="tooltip/rv5z.jpg"/></span>
+    </div>
+    <div class="state" id="rpr1">
+      <img id="rpr1png" src="states/red.png"/>
+      <span><img src="tooltip/rpr.jpg"/></span>
+    </div>
+    <div class="state" id="vkor">
+      <img id="vkorpng" src="states/red.png"/>
+      <span><img src="tooltip/vkor.jpg"/></span>
+    </div>
+    <div class="state" id="rzdr1">
+      <img id="rzdr1png" src="states/red.png"/>
+      <span><img src="tooltip/rzdr.jpg"/></span>
+    </div>
+    <div class="state" id="vbrz">
+      <img id="vbrzpng" src="states/red.png"/>
+      <span><img src="tooltip/vbrz.jpg"/></span>
+    </div>
+    <div class="state" id="rodz2">
+      <img id="rodz2png" src="states/red.png"/>
+      <span><img src="tooltip/rodz.jpg"/></span>
+    </div>
+    <div class="state" id="rod">
+      <img id="rodpng" src="states/red.png"/>
+      <span><img src="tooltip/rod.jpg"/></span>
+    </div>
+    <div class="state" id="rpz2">
+      <img id="rpz2png" src="states/red.png"/>
+      <span><img src="tooltip/rpz.jpg"/></span>
+    </div>
+    <div class="state" id="rodr2">
+      <img id="rodr2png" src="states/red.png"/>
+      <span><img src="tooltip/rodr.jpg"/></span>
+    </div>
+    <div class="state" id="rkdz1">
+      <img id="rkdz1png" src="states/red.png"/>
+      <span><img src="tooltip/rkdz.jpg"/></span>
+    </div>
+    <div class="state" id="rkdr1">
+      <img id="rkdr1png" src="states/red.png"/>
+      <span><img src="tooltip/rkdr.jpg"/></span>
+    </div>
+    <div class="state" id="rtor2">
+      <img id="rtor2png" src="states/red.png"/>
+      <span><img src="tooltip/rtor.jpg"/></span>
+    </div>
+    <div class="state" id="rpr2">
+      <img id="rpr2png" src="states/red.png"/>
+      <span><img src="tooltip/rpr.jpg"/></span>
+    </div>
+    <div class="state" id="rv5r1">
+      <img id="rv5r1png" src="states/red.png"/>
+      <span><img src="tooltip/rv5r.jpg"/></span>
+    </div>
+    <div class="state" id="kbrr">
+      <img id="kbrrpng" src="states/green.png"/>
+      <span><img src="tooltip/kbrr.jpg"/></span>
+    </div>
+    <div class="state" id="rdr4">
+      <img id="rdr4png" src="states/green.png"/>
+      <span><img src="tooltip/rdr.jpg"/></span>
+    </div>
+    <div class="state" id="vr2-1r">
+      <img id="vr2-1rpng" src="states/green.png"/>
+      <span><img src="tooltip/vr2-1r.jpg"/></span>
+    </div>
+    <div class="state" id="rkdz2">
+      <img id="rkdz2png" src="states/green.png"/>
+      <span><img src="tooltip/rkdz.jpg"/></span>
+    </div>
+    <div class="state" id="rv2r2">
+      <img id="rv2r2png" src="states/green.png"/>
+      <span><img src="tooltip/rv2r.jpg"/></span>
+    </div>
+    <div class="state" id="f12knpz">
+      <img id="f12knpzpng" src="states/red.png"/>
+      <span><img src="tooltip/f12knpz.jpg"/></span>
+    </div>
+    <div class="state" id="f12knz">
+      <img id="f12knzpng" src="states/red.png"/>
+      <span><img src="tooltip/f12knz.jpg"/></span>
+    </div>
+    <div class="state" id="f12rez2">
+      <img id="f12rez2png" src="states/red.png"/>
+      <span><img src="tooltip/f12rez.jpg"/></span>
+    </div>
+    <div class="state" id="f12re">
+      <img id="f12repng" src="states/red.png"/>
+      <span><img src="tooltip/f12re.jpg"/></span>
+    </div>
+    <div class="state" id="f12ep-4z">
+      <img id="f12ep-4zpng" src="states/red.png"/>
+      <span><img src="tooltip/f12ep-4z.jpg"/></span>
+    </div>
+    <div class="state" id="f6knpz">
+      <img id="f6knpzpng" src="states/red.png"/>
+      <span><img src="tooltip/f6knpz.jpg"/></span>
+    </div>
+    <div class="state" id="f6knz">
+      <img id="f6knzpng" src="states/red.png"/>
+      <span><img src="tooltip/f6knz.jpg"/></span>
+    </div>
+    <div class="state" id="f6rez2">
+      <img id="f6rez2png" src="states/red.png"/>
+      <span><img src="tooltip/f6rez.jpg"/></span>
+    </div>
+    <div class="state" id="f6re">
+      <img id="f6repng" src="states/red.png"/>
+      <span><img src="tooltip/f6re.jpg"/></span>
+    </div>
+    <div class="state" id="f6ep-3r6ep-4z">
+      <img id="f6ep-3r6ep-4zpng" src="states/red.png"/>
+      <span><img src="tooltip/f6ep-3r6ep-4z.jpg"/></span>
+    </div>
+    <div class="state" id="f1knpz">
+      <img id="f1knpzpng" src="states/red.png"/>
+      <span><img src="tooltip/f1knpz.jpg"/></span>
+    </div>
+    <div class="state" id="f1knz">
+      <img id="f1knzpng" src="states/red.png"/>
+      <span><img src="tooltip/f1knz.jpg"/></span>
+    </div>
+    <div class="state" id="f1rez2">
+      <img id="f1rez2png" src="states/red.png"/>
+      <span><img src="tooltip/f1rez.jpg"/></span>
+    </div>
+    <div class="state" id="f1re">
+      <img id="f1repng" src="states/red.png"/>
+      <span><img src="tooltip/f1re.jpg"/></span>
+    </div>
+    <div class="state" id="f1ep-3r">
+      <img id="f1ep-3rpng" src="states/red.png"/>
+      <span><img src="tooltip/f1ep-3r.jpg"/></span>
+    </div>
+    <div class="state" id="vr2-2z">
+      <img id="vr2-2zpng" src="states/red.png"/>
+      <span><img src="tooltip/vr2-2z.jpg"/></span>
+    </div>
+    <div class="state" id="kmr1">
+      <img id="kmr1png" src="states/red.png"/>
+      <span><img src="tooltip/kmr.jpg"/></span>
+    </div>
+    <div class="state" id="rdr3">
+      <img id="rdr3png" src="states/red.png"/>
+      <span><img src="tooltip/rdr.jpg"/></span>
+    </div>
+    <div class="state" id="mknvverhz">
+      <img id="mknvverhzpng" src="states/red.png"/>
+      <span><img src="tooltip/mknvverhz.jpg"/></span>
+    </div>
+    <div class="state" id="mknvnizz">
+      <img id="mknvnizzpng" src="states/red.png"/>
+      <span><img src="tooltip/mknvnizz.jpg"/></span>
+    </div>
+    <div class="state" id="rodr3">
+      <img id="rodr3png" src="states/red.png"/>
+      <span><img src="tooltip/rodr.jpg"/></span>
+    </div>
+    <div class="state" id="kbz1">
+      <img id="kbz1png" src="states/red.png"/>
+      <span><img src="tooltip/kbz.jpg"/></span>
+    </div>
+    <div class="state" id="kb">
+      <img id="kbpng" src="states/red.png"/>
+      <span><img src="tooltip/kb.jpg"/></span>
+    </div>
+    <div class="state" id="f12rez3">
+      <img id="f12rez3png" src="states/red.png"/>
+      <span><img src="tooltip/f12rez.jpg"/></span>
+    </div>
+    <div class="state" id="f6rez3">
+      <img id="f6rez3png" src="states/red.png"/>
+      <span><img src="tooltip/f6rez.jpg"/></span>
+    </div>
+    <div class="state" id="f1rez3">
+      <img id="f1rez3png" src="states/red.png"/>
+      <span><img src="tooltip/f1rez.jpg"/></span>
+    </div>
+    <div class="state" id="f12ep-2r">
+      <img id="f12ep-2rpng" src="states/red.png"/>
+      <span><img src="tooltip/f12ep-2r.jpg"/></span>
+    </div>
+    <div class="state" id="f6ep-2r">
+      <img id="f6ep-2rpng" src="states/red.png"/>
+      <span><img src="tooltip/f6ep-2r.jpg"/></span>
+    </div>
+    <div class="state" id="f6ep-1z">
+      <img id="f6ep-1zpng" src="states/red.png"/>
+      <span><img src="tooltip/f6ep-1z.jpg"/></span>
+    </div>
+    <div class="state" id="f1ep-1z">
+      <img id="f1ep-1zpng" src="states/red.png"/>
+      <span><img src="tooltip/f1ep-1z.jpg"/></span>
+    </div>
+    <div class="state" id="kmz1">
+      <img id="kmz1png" src="states/red.png"/>
+      <span><img src="tooltip/kmz.jpg"/></span>
+    </div>
+    <div class="state" id="kknvverhz">
+      <img id="kknvverhzpng" src="states/red.png"/>
+      <span><img src="tooltip/kknvverhz.jpg"/></span>
+    </div>
+    <div class="state" id="kknvnizz">
+      <img id="kknvnizzpng" src="states/red.png"/>
+      <span><img src="tooltip/kknvnizz.jpg"/></span>
+    </div>
+    <div class="state" id="knr1">
+      <img id="knr1png" src="states/red.png"/>
+      <span><img src="tooltip/knr.jpg"/></span>
+    </div>
+    <div class="state" id="kvr1">
+      <img id="kvr1png" src="states/red.png"/>
+      <span><img src="tooltip/kvr.jpg"/></span>
+    </div>
+    <div class="state" id="kv">
+      <img id="kvpng" src="states/red.png"/>
+      <span><img src="tooltip/kv.jpg"/></span>
+    </div>
+    <div class="state" id="kn">
+      <img id="knpng" src="states/red.png"/>
+      <span><img src="tooltip/kn.jpg"/></span>
+    </div>
+    <div class="state" id="rkdz3">
+      <img id="rkdz3png" src="states/green.png"/>
+      <span><img src="tooltip/rkdz.jpg"/></span>
+    </div>
+    <div class="state" id="kbz2">
+      <img id="kbz2png" src="states/red.png"/>
+      <span><img src="tooltip/kbz.jpg"/></span>
+    </div>
+    <div class="state" id="kvz1">
+      <img id="kvz1png" src="states/red.png"/>
+      <span><img src="tooltip/kvz.jpg"/></span>
+    </div>
+    <div class="state" id="knz1">
+      <img id="knz1png" src="states/red.png"/>
+      <span><img src="tooltip/knz.jpg"/></span>
+    </div>
+    <div class="state" id="kmz2">
+      <img id="kmz2png" src="states/red.png"/>
+      <span><img src="tooltip/kmz.jpg"/></span>
+    </div>
+    <div class="state" id="rpz3">
+      <img id="rpz3png" src="states/red.png"/>
+      <span><img src="tooltip/rpz.jpg"/></span>
+    </div>
+    <div class="state" id="rtoz2">
+      <img id="rtoz2png" src="states/red.png"/>
+      <span><img src="tooltip/rtoz.jpg"/></span>
+    </div>
+    <div class="state" id="rtoz3">
+      <img id="rtoz3png" src="states/red.png"/>
+      <span><img src="tooltip/rtoz.jpg"/></span>
+    </div>
+    <div class="state" id="rzdr2">
+      <img id="rzdr2png" src="states/green.png"/>
+      <span><img src="tooltip/rzdr.jpg"/></span>
+    </div>
+    <div class="state" id="rkd">
+      <img id="rkdpng" src="states/green.png"/>
+      <span><img src="tooltip/rkd.jpg"/></span>
+    </div>
+    <div class="state" id="rkdr2">
+      <img id="rkdr2png" src="states/red.png"/>
+      <span><img src="tooltip/rkdr.jpg"/></span>
+    </div>
+    <div class="state" id="rkdz4">
+      <img id="rkdz4png" src="states/red.png"/>
+      <span><img src="tooltip/rkdz.jpg"/></span>
+    </div>
+    <div class="state" id="kbr1">
+      <img id="kbr1png" src="states/red.png"/>
+      <span><img src="tooltip/kbr.jpg"/></span>
+    </div>
+    <div class="state" id="km">
+      <img id="kmpng" src="states/red.png"/>
+      <span><img src="tooltip/km.jpg"/></span>
+    </div>
+    <div class="state" id="kvz2">
+      <img id="kvz2png" src="states/red.png"/>
+      <span><img src="tooltip/kvz.jpg"/></span>
+    </div>
+    <div class="state" id="knz2">
+      <img id="knz2png" src="states/red.png"/>
+      <span><img src="tooltip/knz.jpg"/></span>
+    </div>
+    <div class="state" id="rd">
+      <img id="rdpng" src="states/red.png"/>
+      <span><img src="tooltip/rd.jpg"/></span>
+    </div>
+    <div class="state" id="rzdz4">
+      <img id="rzdz4png" src="states/red.png"/>
+      <span><img src="tooltip/rzdz.jpg"/></span>
+    </div>
+    <div class="state" id="rzdz5">
+      <img id="rzdz5png" src="states/red.png"/>
+      <span><img src="tooltip/rzdz.jpg"/></span>
+    </div>
+    <div class="state" id="rodz3">
+      <img id="rodz3png" src="states/red.png"/>
+      <span><img src="tooltip/rodz.jpg"/></span>
+    </div>
+    <div class="state" id="rodz4">
+      <img id="rodz4png" src="states/red.png"/>
+      <span><img src="tooltip/rodz.jpg"/></span>
+    </div>
+    <div class="state" id="knz3">
+      <img id="knz3png" src="states/red.png"/>
+      <span><img src="tooltip/knz.jpg"/></span>
+    </div>
+    <div class="state" id="knz4">
+      <img id="knz4png" src="states/red.png"/>
+      <span><img src="tooltip/knz.jpg"/></span>
+    </div>
+    <div class="state" id="kvz3">
+      <img id="kvz3png" src="states/red.png"/>
+      <span><img src="tooltip/kvz.jpg"/></span>
+    </div>
+    <div class="state" id="kvz4">
+      <img id="kvz4png" src="states/red.png"/>
+      <span><img src="tooltip/kvz.jpg"/></span>
+    </div>
+    <div class="state" id="kbz3">
+      <img id="kbz3png" src="states/red.png"/>
+      <span><img src="tooltip/kbz.jpg"/></span>
+    </div>
+    <div class="state" id="kbz4">
+      <img id="kbz4png" src="states/red.png"/>
+      <span><img src="tooltip/kbz.jpg"/></span>
+    </div>
+    <div class="state" id="kmz3">
+      <img id="kmz3png" src="states/red.png"/>
+      <span><img src="tooltip/kmz.jpg"/></span>
+    </div>
+    <div class="state" id="kmz4">
+      <img id="kmz4png" src="states/red.png"/>
+      <span><img src="tooltip/kmz.jpg"/></span>
+    </div>
+    <div class="state" id="rdz3">
+      <img id="rdz3png" src="states/red.png"/>
+      <span><img src="tooltip/rdz.jpg"/></span>
+    </div>
+    <div class="state" id="emt">
+      <img id="emtpng" src="states/red.png"/>
+      <span><img src="tooltip/emt.jpg"/></span>
+    </div>
+    <div class="footer"></div>
+  </div>
+  <script type="text/javascript" src="libraries/jquery-2.1.0.js"></script>
+  <script type="text/javascript" src="libraries/underscore.js"></script>
+  <script type="text/javascript" src="libraries/backbone.js"></script>
+  <script type="text/javascript" src="320.js"></script>
+</body>
+</html>
